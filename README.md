@@ -45,7 +45,7 @@ VideoResnet requires videos to be sampled into images and cropped to a square ra
 
 Usage:
 
-    python preprocessing.py [path_to_dataset] [path_to_save_images]
+    python Preprocessing/preprocessing.py [path_to_dataset] [path_to_save_images]
 
 ## Hyperparameters
 
@@ -69,7 +69,7 @@ The following hyper_parameters are set by default.
 
 Usage:
 
-    python training.py [path_to_save_images]
+    python Training/training.py [path_to_save_images]
     
     
 ## Acknowledgements
