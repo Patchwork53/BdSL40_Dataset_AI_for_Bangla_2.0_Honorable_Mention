@@ -263,14 +263,14 @@ def start_training(path2data, hyper_params):
 
 
     train_transformer = transforms.Compose([
-                transforms.RandomHorizontalFlip(p=0.5),  
-                transforms.RandomAffine(degrees=0, translate=(0.1,0.1)),    
+#                 transforms.RandomHorizontalFlip(p=0.5),  
+#                 transforms.RandomAffine(degrees=0, translate=(0.1,0.1)),    
                 transforms.ToTensor(),
                 transforms.Normalize(mean, std),
                 ])     
 
     test_transformer = transforms.Compose([
-                transforms.Resize((h,w)),
+#                 transforms.Resize((h,w)),
                 transforms.ToTensor(),
                 transforms.Normalize(mean, std),
                 ]) 
@@ -325,8 +325,8 @@ def start_training(path2data, hyper_params):
 
 if __name__ == "__main__":
     hyper_params = {
-        "num_epochs": 100,
-        "learning_rate": 0.001,
+        "num_epochs": 300,
+        "learning_rate": 5e-5,
         "batch_size": 64,
         "h": 100,
         "w": 100,
