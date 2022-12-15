@@ -59,7 +59,7 @@ Usage:
 
 The following hyper_parameters are set by default.
 
-    "num_epochs": 300,
+    "num_epochs": 120,
     "learning_rate": 5e-5,
     "batch_size": 64,
     "h": 100,
