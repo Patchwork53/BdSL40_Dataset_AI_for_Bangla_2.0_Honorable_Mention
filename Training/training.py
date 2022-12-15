@@ -325,15 +325,15 @@ def start_training(path2data, hyper_params):
 
 if __name__ == "__main__":
     hyper_params = {
-        "num_epochs": 300,
+       "num_epochs": 300,
         "learning_rate": 5e-5,
         "batch_size": 64,
         "h": 100,
         "w": 100,
-        "mean": [0.43216, 0.394666, 0.37645],
-        "std":  [0.22803, 0.22145, 0.216989],
+        "mean": [0.5, 0.5, 0.5],
+        "std":  [0.5, 0.5, 0.5],
         "total_frames": 32,
-        "start_skip": 8,
+        "start_skip": 6,
         "end_skip": 8,
         "batch_size": 64,
         "num_classes": 40,
