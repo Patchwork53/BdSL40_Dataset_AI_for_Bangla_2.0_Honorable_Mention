@@ -1,4 +1,3 @@
-
 import os
 import torch
 import copy
@@ -99,7 +98,7 @@ def train_val(model, params):
             model.load_state_dict(best_model_wts)
         
 
-        print("train loss: %.6f, dev loss: %.6f, accuracy: %.2f" %(train_loss,val_loss,100*val_metric))
+        print("train loss: %.6f, dev loss: %.6f, training accuracy: %.2f, accuracy: %.2f" %(train_loss,val_loss,100*train_metric, 100*val_metric))
         print("-"*10) 
     model.load_state_dict(best_model_wts)
         
@@ -145,9 +144,8 @@ def loss_epoch(model,loss_func,dataset_dl,sanity_check=False,opt=None):
     return loss, metric
 
 def plot_loss(loss_hist, metric_hist):
-
+    
     num_epochs= len(loss_hist["train"])
-
     plt.title("Train-Val Loss")
     plt.plot(range(1,num_epochs+1),loss_hist["train"],label="train")
     plt.plot(range(1,num_epochs+1),loss_hist["val"],label="val")
@@ -263,14 +261,14 @@ def start_training(path2data, hyper_params):
 
 
     train_transformer = transforms.Compose([
-#                 transforms.RandomHorizontalFlip(p=0.5),  
-#                 transforms.RandomAffine(degrees=0, translate=(0.1,0.1)),    
+                transforms.RandomHorizontalFlip(p=0.5),  
+                transforms.RandomAffine(degrees=0, translate=(0.1,0.1)),    
                 transforms.ToTensor(),
                 transforms.Normalize(mean, std),
                 ])     
 
     test_transformer = transforms.Compose([
-#                 transforms.Resize((h,w)),
+                transforms.Resize((h,w)),
                 transforms.ToTensor(),
                 transforms.Normalize(mean, std),
                 ]) 
@@ -311,7 +309,7 @@ def start_training(path2data, hyper_params):
         "loss_func": loss_func,
         "train_dl": train_dl,
         "val_dl": test_dl,
-        "sanity_check": True,
+        "sanity_check": False,
         "lr_scheduler": lr_scheduler,
         "path2weights": "./models/weights_3dcnn.pt",
         'verbose':0
@@ -323,9 +321,10 @@ def start_training(path2data, hyper_params):
 
 
 
+
 if __name__ == "__main__":
     hyper_params = {
-       "num_epochs": 300,
+       "num_epochs": 50,
         "learning_rate": 5e-5,
         "batch_size": 64,
         "h": 100,
