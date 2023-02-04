@@ -82,6 +82,11 @@ Usage:
 ## Results after Training
 Accuracy 82.93%
 
+![Result1](https://github.com/PatchworkProgrammer/BdSL40_Dataset/blob/main/Resources/__results___12_0.png)
+
+![Result2](https://github.com/PatchworkProgrammer/BdSL40_Dataset/blob/main/Resources/__results___12_1.png)
+
+
 ## Acknowledgements
 
 This dataset is adapted from by [INCLUDE](https://zenodo.org/record/4010759) by [Sridhar et al](https://doi.org/10.1145/3394171.3413528) under the [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
