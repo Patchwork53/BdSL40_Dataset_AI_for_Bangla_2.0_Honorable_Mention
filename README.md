@@ -79,7 +79,9 @@ Usage:
 
     python Training/training.py [path_to_save_images]
     
-    
+## Results after Training
+Accuracy 82.93%
+
 ## Acknowledgements
 
 This dataset is adapted from by [INCLUDE](https://zenodo.org/record/4010759) by [Sridhar et al](https://doi.org/10.1145/3394171.3413528) under the [Creative Commons 4.0](https://creativecommons.org/licenses/by/4.0/legalcode) license.
