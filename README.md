@@ -82,9 +82,7 @@ Usage:
 ## Results after Training
 Accuracy 82.93%
 
-![Result1](https://github.com/PatchworkProgrammer/BdSL40_Dataset/blob/main/Resources/__results___12_0.png)
-
-![Result2](https://github.com/PatchworkProgrammer/BdSL40_Dataset/blob/main/Resources/__results___12_1.png)
+![Result2](https://github.com/PatchworkProgrammer/BdSL40_Dataset/blob/main/Resources/results.png)
 
 
 ## Acknowledgements
