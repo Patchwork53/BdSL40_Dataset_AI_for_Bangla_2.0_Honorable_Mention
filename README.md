@@ -1,6 +1,9 @@
 # BdSL40 Dataset
 This Bangla Sign Language Dataset **BdSL40** comprises of 611 videos over 40 BdSL words with 8 to 22 video clips per word. 
 
+## AI for Bangla 2.0
+This project received an Honorable Mention at the [AI for Bangla 2.0](https://bangla.gov.bd/ai-for-bangla-2-0/) Competition.
+
 ## Dataset Link
 [BdSL40](https://drive.google.com/file/d/1mSId206Y5enSRsW812Ike_-eP94ZG9Kl/view?usp=sharing)
 
