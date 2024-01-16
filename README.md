@@ -5,7 +5,7 @@ This Bangla Sign Language Dataset **BdSL40** comprises of 611 videos over 40 BdS
 This project received an Honorable Mention at the [AI for Bangla 2.0](https://bangla.gov.bd/ai-for-bangla-2-0/) Competition, under team name -- *Silent Sentinels*.
 
 ## Dataset Link
-[BdSL40 Video](https://drive.google.com/file/d/1mSId206Y5enSRsW812Ike_-eP94ZG9Kl/view?usp=sharing) <br>
+[BdSL40 Video](https://drive.google.com/file/d/1bn5gFqbSdhMIOdC9-2gRobMYilc5H9gj/view?usp=sharing) <br>
 [BdSL40 Frames](https://www.kaggle.com/datasets/sameen53/bdsl-images)
 
 ## ISL to BDSL Mapping
